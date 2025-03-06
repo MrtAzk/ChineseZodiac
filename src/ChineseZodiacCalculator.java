@@ -4,9 +4,11 @@ public class ChineseZodiacCalculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // Prompt the user to input their birth year
         System.out.println("Doğum Yılınızı Giriniz : ");
 
         int birthYear = scanner.nextInt();
+
 
         // Chinese Zodiac Calculation
         String ChineseZodiac = switch (birthYear % 12){
@@ -25,6 +27,7 @@ public class ChineseZodiacCalculator {
             default -> "Hatalı Giriş";
         };
 
+        // Print out the user's Chinese zodiac sign
         System.out.println("Çin Zodyağı Burcunuz : " + ChineseZodiac);
 
         scanner.close();
